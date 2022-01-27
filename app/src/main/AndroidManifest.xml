@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.notifications">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Notifications">
+        <activity
+            android:name=".screens.DelayAlarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.TimeAlarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.IdleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.NetworkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.GPSActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.BatteryActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".service.BatteryLowService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.BatteryLowBackServie"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.ChargingService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.ChargingBackService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.NetworkBackService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.IdelBackService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.GpsBackService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.myAlarm" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.DelayAlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.myDelayAlarm" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver> <!-- <receiver -->
+        <!-- android:name=".receiver.NetworkReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action -->
+        <!-- android:name="android.net.conn.CONNECTIVITY_CHANGE" -->
+        <!-- tools:ignore="BatteryLife" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name=".receiver.GPSReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.location.PROVIDERS_CHANGED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name=".receiver.IdelModeReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.os.action.DEVICE_IDLE_MODE_CHANGED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name=".receiver.BatteryLowReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BATTERY_LOW" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name=".receiver.ChargingReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BATTERY_CHANGED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

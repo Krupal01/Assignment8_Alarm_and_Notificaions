@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_battery.xml" value="0.19972826086956522" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_charging.xml" value="0.1852355072463768" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_delay_alarm.xml" value="0.19972826086956522" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_gps.xml" value="0.1852355072463768" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_gpsactivity.xml" value="0.19972826086956522" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_idle.xml" value="0.19972826086956522" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_network.xml" value="0.1852355072463768" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_notification.xml" value="0.18070652173913043" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_power.xml" value="0.1852355072463768" />
+        <entry key="..\:/TatvaSoft/AssignmentNotification/app/src/main/res/layout/activity_time_alarm.xml" value="0.19972826086956522" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

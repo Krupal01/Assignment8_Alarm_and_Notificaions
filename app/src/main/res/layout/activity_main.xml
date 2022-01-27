@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_and_notification"
+        android:textSize="30sp"
+        android:layout_marginVertical="50dp"
+        android:fontFamily="serif" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/Lable"
+            android:text="@string/notify_while_in_charge_mode" />
+        <Switch
+            style="@style/OnOffSwitch"
+            android:id="@+id/swCharge"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/Lable"
+            android:text="@string/notify_when_battery_is_low" />
+        <Switch
+            style="@style/OnOffSwitch"
+            android:id="@+id/swBatteryLow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/Lable"
+            android:text="@string/notify_when_network_state_change" />
+        <Switch
+            style="@style/OnOffSwitch"
+            android:id="@+id/swNetwork"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/Lable"
+            android:text="@string/notify_on_gps_enable_disable" />
+        <Switch
+            style="@style/OnOffSwitch"
+            android:id="@+id/swGps"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/Lable"
+            android:text="@string/notify_when_device_is_idle" />
+        <Switch
+            style="@style/OnOffSwitch"
+            android:id="@+id/swIdel"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <EditText
+            style="@style/Lable"
+            android:hint="@string/set_alarm_time"
+            android:id="@+id/etAlarmTime"
+            android:focusable="false"/>
+        <Switch
+            style="@style/OnOffSwitch"
+            android:id="@+id/swSetAlarm"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <EditText
+            style="@style/Lable"
+            android:inputType="number"
+            android:hint="@string/set_alarm_delay_in_second"
+            android:id="@+id/etDelayTime"/>
+        <Switch
+            style="@style/OnOffSwitch"
+            android:id="@+id/swSetDelayAlarm"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

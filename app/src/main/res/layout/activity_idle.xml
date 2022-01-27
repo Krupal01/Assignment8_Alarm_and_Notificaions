@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.IdleActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        style="@style/Img"
+        android:src="@drawable/idle_smartphone"
+        android:id="@+id/imgIdle"/>
+    <TextView
+        style="@style/tvdiscription"
+        android:textSize="20sp"
+        android:id="@+id/tvIdleShort"/>
+    <TextView
+        style="@style/tvdiscription"
+        android:id="@+id/tvIdleLong"/>
+</LinearLayout>

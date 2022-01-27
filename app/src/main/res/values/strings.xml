@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Notifications</string>
+    <string name="notify_while_in_charge_mode">Notify while in charge mode</string>
+    <string name="notify_when_battery_is_low">Notify when battery is low</string>
+    <string name="notify_when_network_state_change">Notify when network state change</string>
+    <string name="notify_on_gps_enable_disable">Notify on GPS Enable / Disable</string>
+    <string name="notify_when_device_is_idle">Notify when device is idle</string>
+    <string name="alarm_and_notification">Alarm and Notification</string>
+    <string name="set_alarm_time">set alarm time</string>
+    <string name="set_alarm_delay_in_second">Set Alarm Delay in second</string>
+</resources>
